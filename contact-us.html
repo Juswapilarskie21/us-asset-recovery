@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMS Terms & Privacy | US Asset Recovery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --primary: #162e41;
+        --secondary: #f4f4ee;
+        --light: #000080;
+        --dark: #a78746;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--primary);
+      }
+
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+      }
+
+      .hero {
+        background-color: var(--secondary);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(
+          rgba(255, 255, 255, 0.1) 2px,
+          transparent 2px
+        );
+        background-size: 20px 20px;
+        z-index: 1;
+      }
+
+      .process-step {
+        transition: all 0.3s ease;
+      }
+
+      .process-step:hover {
+        transform: translateY(-10px);
+      }
+
+      .testimonial-card {
+        box-shadow: 0 5px 15px var(--secondary);
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .stat-card {
+        background: var(--secondary);
+        backdrop-filter: blur(10px);
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: var(--secondary);
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .btn-primary {
+        background: var(--secondary);
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background: var(--light);
+        transform: translateY(-2px);
+      }
+
+      .btn-secondary:hover {
+        background: var(--secondary);
+        transform: translateY(-2px);
+      }
+
+      .section-title {
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        bottom: -10px;
+        left: 0;
+        background: var(--secondary);
+      }
+
+      .service-icon {
+        color: var(--primary);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .case-study-card {
+        border-left: 4px solid var(--primary);
+      }
+
+      .text-primary {
+        color: var(--primary) !important;
+      }
+      .text-secondary {
+        color: var(--secondary);
+      }
+      .text-light {
+        color: var(--light);
+      }
+      .text-dark {
+        color: var(--dark);
+      }
+      .bg-primary {
+        background: var(--primary);
+      }
+      .bg-secondary {
+        background: var(--secondary) !important;
+      }
+      .bg-light {
+        background: var(--light);
+      }
+      .bg-dark {
+        background: var(--dark);
+      }
+      .header-light {
+        color: var(--light) !important;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#162e41",
+              secondary: "#f4f4ee",
+              light: "#000080",
+              dark: "#a78746",
+              accent: "#ffb300",
+            },
+            fontFamily: {
+              base: ["Segoe UI", "Tahoma", "Geneva", "Verdana", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-base bg-secondary text-primary">
+    <!-- Navigation -->
+    <nav class="bg-secondary shadow-lg sticky top-0 z-30">
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex justify-between items-center">
+          <a href="#home" class="flex items-center space-x-1">
+            <img
+              src="images/US ASSET RECOVERY Logo (No Background).png"
+              alt="US Asset Recovery Logo"
+              class="h-28 w-auto"
+            />
+            <h1 class="text-2xl font-bold header-light">
+              US ASSET RECOVERY SERVICES
+            </h1>
+          </a>
+
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="/index.html" class="nav-link text-light hover:header-light"
+              >Home</a
+            >
+            <span>|</span>
+            <a href="#about" class="nav-link text-light hover:header-light"
+              >About</a
+            >
+            <span>|</span>
+            <a
+              href="/index.html#services"
+              class="nav-link text-light hover:header-light"
+              >Services</a
+            >
+            <span>|</span>
+            <a
+              href="/index.html#testimonials"
+              class="nav-link text-light hover:header-light"
+              >Testimonials</a
+            >
+            <span>|</span>
+            <a href="#" class="nav-link text-light hover:header-light"
+              >Contact Us</a
+            >
+          </div>
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+          <a
+            href="/index.html"
+            class="block px-2 py-4 text-sm hover:bg-light text-primary"
+            >Home</a
+          >
+          <a
+            href="/index.html#about"
+            class="block px-2 py-4 text-sm hover:bg-light text-primary"
+            >About</a
+          >
+          <a
+            href="/index.html#services"
+            class="block px-2 py-4 text-sm hover:bg-light text-primary"
+            >Services</a
+          >
+          <a
+            href="/index.html#testimonials"
+            class="block px-2 py-4 text-sm hover:bg-light text-primary"
+            >Testimonials</a
+          >
+          <a
+            href="#"
+            class="block px-2 py-4 text-sm hover:bg-light text-primary"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 px-4 bg-white shadow-inner">
+      <h1 class="text-4xl font-extrabold text-light mb-2">Contact Us Page</h1>
+      <div class="w-24 h-1 bg-light mx-auto mb-6 rounded"></div>
+      <p class="text-lg max-w-3xl mx-auto text-gray-700">
+        If you have any Questions, feel Free to Contact Us at:
+      </p>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="max-w-2xl mx-auto px-6 py-16 text-center space-y-12">
+      <!-- Email -->
+      <div class="flex flex-col items-center space-y-3">
+        <div class="flex items-center space-x-3">
+          <!-- Email Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7 text-light"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16.5 6h-9A2.5 2.5 0 005 8.5v7A2.5 2.5 0 007.5 18h9a2.5 2.5 0 002.5-2.5v-7A2.5 2.5 0 0016.5 6z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 8l7 5 7-5"
+            />
+          </svg>
+          <h2 class="text-2xl font-semibold text-light">Email:</h2>
+        </div>
+        <a
+          href="mailto:clientservices@recoverassetus.com"
+          class="text-lg text-blue-700 hover:underline"
+        >
+          clientservices@recoverassetus.com
+        </a>
+      </div>
+
+      <!-- Phone -->
+      <div class="flex flex-col items-center space-y-3">
+        <div class="flex items-center space-x-3">
+          <!-- Phone Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7 text-light"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 5a2 2 0 012-2h1a2 2 0 012 2v1a2 2 0 01-2 2H5v2a11 11 0 0011 11h2v-2a2 2 0 012-2h1a2 2 0 012 2v1a2 2 0 01-2 2h-1c-9.39 0-17-7.61-17-17V7a2 2 0 012-2z"
+            />
+          </svg>
+          <h2 class="text-2xl font-semibold text-light">Phone:</h2>
+        </div>
+        <a href="tel:7543315007" class="text-lg text-blue-700 hover:underline">
+          754-331-5007
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-primary py-8">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <div class="text-2xl font-bold header-light">
+              US Asset Recovery Services, LLC
+            </div>
+            <p class="header-light">© 2023 All Rights Reserved</p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="#" class="text-primary hover:header-light"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-primary hover:header-light"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-primary hover:header-light"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="text-primary hover:header-light"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <script
+      src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"
+      defer
+    ></script>
+    <script
+      src="https://files.bpcontent.cloud/2025/06/19/07/20250619072645-BPQ0PM19.js"
+      defer
+    ></script>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      document.getElementById("menu-btn").addEventListener("click", () => {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
